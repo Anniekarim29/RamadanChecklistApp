@@ -1,16 +1,29 @@
-# ramadan_checklist_app
+# Ramadan Checklist App
 
-A new Flutter project.
+A premium, feature-rich Ramadan companion app built with Flutter. Track your prayers, fasting, Quran progress, and daily Dhikr with a beautiful emerald green interface.
 
-## Getting Started
+## App Screenshots
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <img src="lib/assets/iPhone-14-Plus-localhost (1).png" width="200" />
+  <img src="lib/assets/iPhone-14-Plus-localhost (3).png" width="200" />
+  <img src="lib/assets/iPhone-14-Plus-localhost (4).png" width="200" />
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+  <img src="lib/assets/iPhone-14-Plus-localhost (5).png" width="200" />
+  <img src="lib/assets/iPhone-14-Plus-localhost (6).png" width="200" />
+  <img src="lib/assets/iPhone-14-Plus-localhost (7).png" width="200" />
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p align="center">
+  <img src="lib/assets/iPhone-14-Plus-localhost (8).png" width="200" />
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+- **Daily Prayer Checklist**: Keep track of your five daily prayers and Sunnah.
+- **Fasting Tracker**: Monitor your fasting progress throughout the month.
+- **Quran Progress**: Easily log and visualize your Quran reading goals.
+- **Dhikr Counter**: Stay mindful with a built-in tasbih/counter.
+- **Premium Emerald Theme**: A modern, dark-mode design with vibrant Islamic aesthetics.
+
