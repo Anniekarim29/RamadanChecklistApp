@@ -6,6 +6,7 @@ import 'providers/quran_provider.dart';
 import 'providers/fasting_provider.dart';
 import 'providers/dhikr_provider.dart';
 import 'screens/splash_screen.dart';
+import 'screens/onboarding_screen.dart';
 import 'screens/home_screen.dart';
 
 void main() {
@@ -32,6 +33,7 @@ class RamadanApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const SplashScreen(),
+          '/onboarding': (context) => const OnboardingScreen(),
           '/home': (context) => const HomeScreen(),
         },
       ),

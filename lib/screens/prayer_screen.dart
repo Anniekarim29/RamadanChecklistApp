@@ -107,7 +107,7 @@ class PrayerScreen extends StatelessWidget {
       case 'Fajr': return Icons.wb_twilight_rounded;
       case 'Dhuhr': return Icons.wb_sunny_rounded;
       case 'Asr': return Icons.wb_cloudy_rounded;
-      case 'Maghrib': return Icons.wb_twighlight_rounded;
+      case 'Maghrib': return Icons.wb_sunny_rounded;
       case 'Isha': return Icons.nightlight_round;
       default: return Icons.circle_rounded;
     }

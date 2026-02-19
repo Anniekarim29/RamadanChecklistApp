@@ -56,7 +56,8 @@ class _SplashScreenState extends State<SplashScreen>
     _fadeController.forward();
     await Future.delayed(const Duration(milliseconds: 2000));
     if (mounted) {
-      Navigator.of(context).pushReplacementNamed('/home');
+      Navigator.of(context).pushReplacementNamed('/onboarding');
+
     }
   }
 
