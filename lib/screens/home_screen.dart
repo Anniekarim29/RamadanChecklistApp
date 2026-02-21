@@ -398,17 +398,8 @@ class _LanternHeroHeaderState extends State<_LanternHeroHeader>
       builder: (_, __) {
         return Container(
           width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                const Color(0xFF1A0D00),
-                const Color(0xFF2D1403),
-                AppTheme.background,
-              ],
-              stops: const [0.0, 0.6, 1.0],
-            ),
+          decoration: const BoxDecoration(
+            color: Color(0xFF0F172A), // Deep Midnight/Charcoal base
           ),
           child: SafeArea(
             bottom: false,
@@ -752,21 +743,17 @@ class _OverallProgressCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color(0xFF1A0D00), Color(0xFF2A1800), Color(0xFF0F1E2D)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.5, 1.0],
-        ),
+        color: AppTheme.surface, // Solid deep surface
         borderRadius: BorderRadius.circular(22),
         border: Border.all(
-          color: AppTheme.gold.withValues(alpha: 0.3),
+          color: AppTheme.gold.withValues(alpha: 0.25),
+          width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.gold.withValues(alpha: 0.08),
-            blurRadius: 20,
-            spreadRadius: 2,
+            color: Colors.black.withValues(alpha: 0.3),
+            blurRadius: 15,
+            offset: const Offset(0, 8),
           ),
         ],
       ),
@@ -906,7 +893,7 @@ class _WarmFeatureGrid extends StatelessWidget {
         subtitle: '${prayerProv.completedPrayers}/${prayerProv.totalPrayers} done',
         arabic: 'الصَّلَاة',
         progress: prayerScore,
-        gradientColors: const [Color(0xFF0D2B1A), Color(0xFF1B4332)],
+        gradientColors: const [Color(0xFF0D2B1A), Color(0xFF142D21)],
         accentColor: AppTheme.emerald,
         navIndex: 1,
       ),
@@ -916,7 +903,7 @@ class _WarmFeatureGrid extends StatelessWidget {
         subtitle: '${quranProv.todayPagesRead} pages today',
         arabic: 'الْقُرْآن',
         progress: quranScore,
-        gradientColors: const [Color(0xFF0A1628), Color(0xFF1A3A6B)],
+        gradientColors: const [Color(0xFF0F1E2D), Color(0xFF162536)],
         accentColor: const Color(0xFF60A5FA),
         navIndex: 2,
       ),
@@ -926,7 +913,7 @@ class _WarmFeatureGrid extends StatelessWidget {
         subtitle: '${fastingProv.daysFasted}/30 days',
         arabic: 'الصِّيَام',
         progress: fastingScore,
-        gradientColors: const [Color(0xFF1A0A28), Color(0xFF3B1F5C)],
+        gradientColors: const [Color(0xFF1A142E), Color(0xFF231B3A)],
         accentColor: const Color(0xFFA78BFA),
         navIndex: 3,
       ),
@@ -936,8 +923,7 @@ class _WarmFeatureGrid extends StatelessWidget {
         subtitle:
             '${dhikrProv.subhanallahCount + dhikrProv.alhamdulillahCount + dhikrProv.allahuakbarCount} total',
         arabic: 'الذِّكْر',
-        progress: dhikrScore,
-        gradientColors: const [Color(0xFF1A0D00), Color(0xFF4A2000)],
+        gradientColors: const [Color(0xFF1E1B15), Color(0xFF2D2820)],
         accentColor: AppTheme.gold,
         navIndex: 4,
       ),
@@ -1181,16 +1167,16 @@ class _HadithCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            const Color(0xFF1A0D00).withValues(alpha: 0.9),
-            const Color(0xFF0F1E2D),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
+        color: AppTheme.surface, // Solid deep surface
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.3)),
+        border: Border.all(color: AppTheme.gold.withValues(alpha: 0.2)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.2),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
