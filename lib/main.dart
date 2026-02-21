@@ -30,6 +30,7 @@ class RamadanApp extends StatelessWidget {
         title: 'Ramadan Checklist',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.darkTheme,
+        scrollBehavior: const NoScrollbarBehavior(),
         initialRoute: '/',
         routes: {
           '/': (context) => const SplashScreen(),
@@ -38,5 +39,18 @@ class RamadanApp extends StatelessWidget {
         },
       ),
     );
+  }
+}
+
+class NoScrollbarBehavior extends MaterialScrollBehavior {
+  const NoScrollbarBehavior();
+
+  @override
+  Widget buildScrollbar(
+    BuildContext context,
+    Widget child,
+    ScrollableDetails details,
+  ) {
+    return child;
   }
 }
